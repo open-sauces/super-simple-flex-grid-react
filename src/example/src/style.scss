@@ -1,0 +1,26 @@
+.example {
+  background-color: #eee;
+  margin-bottom: 10px;
+  min-height: 30px;
+};
+.example-dark {
+  background-color: #ddd;
+  margin-bottom: 10px;
+  min-height: 30px;
+};
+.example-dark-custom-width {
+  background-color: #ddd;
+  margin-bottom: 10px;
+  min-height: 30px;
+  flex-basis: 150px;
+};
+.example-grow0 {
+  background-color: #eee;
+  margin-bottom: 10px;
+  min-height: 30px;
+  flex-basis: 150px;
+};
+.example-ellipsis {
+  margin: 0 auto;
+  width: 400px;
+};
