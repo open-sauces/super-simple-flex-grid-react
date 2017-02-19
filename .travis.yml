@@ -1,4 +1,5 @@
 language: node_js
+sudo: required
 node_js:
   - "6"
   - "6.1"
@@ -6,4 +7,3 @@ node_js:
   - "0.6"
   - "node"
 after_success: npm run coverage
-sudo: required

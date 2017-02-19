@@ -2,9 +2,6 @@
   "include": [
     "src/**/*.test.js"
   ],
-  "reporter": [
-    "text-lcov | coveralls"
-  ],
   "sourceMap": false,
   "instrument": false
 }
