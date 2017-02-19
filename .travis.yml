@@ -6,3 +6,4 @@ node_js:
   - "0.6"
   - "node"
 after_success: npm run coverage
+sudo: required
