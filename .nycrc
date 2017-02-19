@@ -5,6 +5,9 @@
   "require": [
     "babel-register"
   ],
+  "reporters": [
+    "text-lcov | coverage"
+  ],
   "extension": [
     ".jsx",
     ".es6"

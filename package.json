@@ -7,8 +7,7 @@
     "build": "webpack",
     "webpack": "webpack-dev-server --progress --watch",
     "test:watch": "mocha-webpack --watch",
-    "test": "nyc tap mocha-webpack",
-    "coverage": "cross-env BABEL_ENV=coverage nyc report --reporter=text-lcov | coveralls"
+    "coverage": "cross-env BABEL_ENV=test nyc mocha-webpack"
   },
   "repository": "git+https://github.com/open-sauces/super-simple-flex-grid-react.git",
   "author": "Vincent Bollaert",
