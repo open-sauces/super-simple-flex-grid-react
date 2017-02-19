@@ -123,7 +123,7 @@ const FlexGridExample = () => {
         <FlexCell customClass={exampleClass}>
           Cell
         </FlexCell>
-        <FlexCell grow={'2'} customClass={exampleClass}>
+        <FlexCell grow={2} customClass={exampleClass}>
           Cell Grow 2
         </FlexCell>
         <FlexCell customClass={exampleClass}>
@@ -138,7 +138,7 @@ const FlexGridExample = () => {
         <FlexCell customClass={exampleClass}>
           Cell
         </FlexCell>
-        <FlexCell grow={'0'} customClass={exampleGrow0Class}>
+        <FlexCell grow={0} customClass={exampleGrow0Class}>
           Cell with custom width
         </FlexCell>
         <FlexCell customClass={exampleClass}>
@@ -172,7 +172,7 @@ const FlexGridExample = () => {
       </FlexRow>
 
       <FlexRow customClass={exampleEllipsisClass}>
-        <FlexCell ellipsis grow={'2'} customClass={exampleClass}>
+        <FlexCell ellipsis grow={2} customClass={exampleClass}>
           Cell with more content than can be displayed and ellipsis with grow
         </FlexCell>
         <FlexCell shrink customClass={exampleDarkClass}>
@@ -184,7 +184,7 @@ const FlexGridExample = () => {
         <FlexCell ellipsis customClass={exampleClass}>
           Cell with more content than can be displayed and ellipsis with grow
         </FlexCell>
-        <FlexCell ellipsis grow={'0'} customClass={exampleDarkCustomWidthClass}>
+        <FlexCell ellipsis grow={0} customClass={exampleDarkCustomWidthClass}>
           Cell with custom width
         </FlexCell>
       </FlexRow>
@@ -193,7 +193,7 @@ const FlexGridExample = () => {
         <FlexCell ellipsis noMargin customClass={exampleClass}>
           Cell with more content than can be displayed and ellipsis with grow and no margin
         </FlexCell>
-        <FlexCell ellipsis noMargin grow={'0'} customClass={exampleDarkCustomWidthClass}>
+        <FlexCell ellipsis noMargin grow={0} customClass={exampleDarkCustomWidthClass}>
           Cell with custom width and no margin
         </FlexCell>
       </FlexRow>

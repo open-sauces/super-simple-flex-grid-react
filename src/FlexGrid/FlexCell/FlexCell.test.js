@@ -3,7 +3,7 @@ import chai, { expect } from 'chai';
 import { shallow } from 'enzyme';
 import chaiEnzyme from 'chai-enzyme';
 
-import FlexCell, { testClassList } from './FlexCell';
+import FlexCell, { testClassList } from './FlexCell.jsx';
 
 chai.use(chaiEnzyme());
 
@@ -65,7 +65,7 @@ describe('<FlexCell />', () => {
   });
 
   it('Renders grow prop', () => {
-    const wrapper = shallow(<FlexCell grow={'2'} />);
+    const wrapper = shallow(<FlexCell grow={2} />);
     expect(wrapper.find(baseElementSelector)).to.have.className(determineElementClass(testClassList(2).grow));
   });
 

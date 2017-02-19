@@ -19,8 +19,8 @@ const testClassList = prop => ({
 });
 
 const FlexCell = ({
-  customClass,
   children,
+  customClass,
   center,
   centerH,
   centerV,
@@ -80,7 +80,7 @@ FlexCell.propTypes = {
   endV: PropTypes.bool,
   spaceAround: PropTypes.bool,
   spaceBetween: PropTypes.bool,
-  grow: PropTypes.string,
+  grow: PropTypes.number,
   shrink: PropTypes.bool,
   ellipsis: PropTypes.bool,
   noMargin: PropTypes.bool,
