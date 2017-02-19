@@ -6,7 +6,7 @@
     "babel-register"
   ],
   "reporters": [
-    "text-lcov | coverage"
+    "text-lcov | coveralls"
   ],
   "sourceMap": false,
   "instrument": false
