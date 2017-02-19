@@ -2,6 +2,13 @@
   "include": [
     "src/**/*.test.js"
   ],
+  "require": [
+    "babel-register"
+  ],
+  "extension": [
+    ".jsx",
+    ".es6"
+  ],
   "sourceMap": false,
   "instrument": false
 }
