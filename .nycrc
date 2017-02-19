@@ -1,16 +1,12 @@
 {
   "include": [
-    "src/**/*.test.js"
+    "./src/**/*.test.js"
   ],
   "require": [
     "babel-register"
   ],
   "reporters": [
     "text-lcov | coverage"
-  ],
-  "extension": [
-    ".jsx",
-    ".es6"
   ],
   "sourceMap": false,
   "instrument": false
