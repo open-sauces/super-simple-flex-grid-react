@@ -1,2 +1,7 @@
 
 npm-debug\.log
+/coverage
+
+*.map
+
+\.nyc_output/
