@@ -22201,8 +22201,8 @@ var testClassList = function testClassList(prop) {
 var FlexCell = function FlexCell(_ref) {
   var _classnames;
 
-  var customClass = _ref.customClass,
-      children = _ref.children,
+  var children = _ref.children,
+      customClass = _ref.customClass,
       center = _ref.center,
       centerH = _ref.centerH,
       centerV = _ref.centerV,
@@ -22576,7 +22576,7 @@ var FlexGridExample = function FlexGridExample() {
       ),
       _react2.default.createElement(
         _FlexGrid.FlexCell,
-        { grow: '2', customClass: exampleClass },
+        { grow: 2, customClass: exampleClass },
         'Cell Grow 2'
       ),
       _react2.default.createElement(
@@ -22600,7 +22600,7 @@ var FlexGridExample = function FlexGridExample() {
       ),
       _react2.default.createElement(
         _FlexGrid.FlexCell,
-        { grow: '0', customClass: exampleGrow0Class },
+        { grow: 0, customClass: exampleGrow0Class },
         'Cell with custom width'
       ),
       _react2.default.createElement(
@@ -22653,7 +22653,7 @@ var FlexGridExample = function FlexGridExample() {
       { customClass: exampleEllipsisClass },
       _react2.default.createElement(
         _FlexGrid.FlexCell,
-        { ellipsis: true, grow: '2', customClass: exampleClass },
+        { ellipsis: true, grow: 2, customClass: exampleClass },
         'Cell with more content than can be displayed and ellipsis with grow'
       ),
       _react2.default.createElement(
@@ -22672,7 +22672,7 @@ var FlexGridExample = function FlexGridExample() {
       ),
       _react2.default.createElement(
         _FlexGrid.FlexCell,
-        { ellipsis: true, grow: '0', customClass: exampleDarkCustomWidthClass },
+        { ellipsis: true, grow: 0, customClass: exampleDarkCustomWidthClass },
         'Cell with custom width'
       )
     ),
@@ -22686,7 +22686,7 @@ var FlexGridExample = function FlexGridExample() {
       ),
       _react2.default.createElement(
         _FlexGrid.FlexCell,
-        { ellipsis: true, noMargin: true, grow: '0', customClass: exampleDarkCustomWidthClass },
+        { ellipsis: true, noMargin: true, grow: 0, customClass: exampleDarkCustomWidthClass },
         'Cell with custom width and no margin'
       )
     )

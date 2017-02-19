@@ -1,0 +1,11 @@
+{
+  "include": [
+    "src/**/*.test.js"
+  ],
+  "reporter": [
+    "lcov",
+    "text"
+  ],
+  "sourceMap": false,
+  "instrument": false
+}

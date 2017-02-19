@@ -2,7 +2,8 @@ import React from 'react';
 import chai, { expect } from 'chai';
 import { shallow } from 'enzyme';
 import chaiEnzyme from 'chai-enzyme';
-import FlexRow from './FlexRow';
+
+import FlexRow from './FlexRow.jsx';
 
 chai.use(chaiEnzyme());
 

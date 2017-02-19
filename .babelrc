@@ -1,3 +1,16 @@
 {
-  "presets": ["react", "es2015", "stage-0"]
+  "presets": ["react", "es2015", "stage-0"],
+  "env": {
+    "coverage": {
+      "plugins": [
+        ["istanbul", {
+          "useInlineSourceMaps": false,
+          "exclude": [
+            "webpack.config-test.babel.js",
+            "**/**/*.js"
+          ],
+        }]
+      ]
+    }
+  }
 }
