@@ -3,8 +3,7 @@
     "src/**/*.test.js"
   ],
   "reporter": [
-    "lcov",
-    "text"
+    "text-lcov | coveralls"
   ],
   "sourceMap": false,
   "instrument": false
