@@ -7,7 +7,7 @@
     "build": "webpack",
     "webpack": "webpack-dev-server --progress --watch",
     "test:watch": "mocha-webpack --watch",
-    "test": "mocha-webpack",
+    "test": "nyc tap mocha-webpack",
     "coverage": "cross-env BABEL_ENV=test nyc report ---reporter=text-lcov | coveralls npm run test"
   },
   "repository": "git+https://github.com/open-sauces/super-simple-flex-grid-react.git",
