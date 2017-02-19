@@ -1,0 +1,5 @@
+--colors
+--require test/helpers/js-dom
+--require test/helpers/ignore-scss
+--webpack-config webpack.config-test.js
+src/**/*.test.js
