@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/open-sauces/super-simple-flex-grid-react/badge.svg?branch=master)](https://coveralls.io/github/open-sauces/super-simple-flex-grid-react?branch=master) [![Build Status](https://travis-ci.org/open-sauces/super-simple-flex-grid-react.svg?branch=master)](https://travis-ci.org/istanbuljs/istanbul-reports)
+[![Coverage Status](https://coveralls.io/repos/github/open-sauces/super-simple-flex-grid-react/badge.svg?branch=master)](https://coveralls.io/github/open-sauces/super-simple-flex-grid-react?branch=master) [![Build Status](https://travis-ci.org/open-sauces/super-simple-flex-grid-react.svg?branch=master)](https://travis-ci.org/open-sauces/super-simple-flex-grid-react)
 
 
 # super-simple-flex-grid-react
