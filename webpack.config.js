@@ -11,7 +11,7 @@ module.exports = () => ({
   },
   devServer: {
     inline: true,
-    port: 7700,
+    port: 8000,
     historyApiFallback: true,
   },
   resolve: {

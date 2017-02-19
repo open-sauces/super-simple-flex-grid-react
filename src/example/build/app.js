@@ -22248,7 +22248,7 @@ FlexCell.propTypes = {
   endV: _react.PropTypes.bool,
   spaceAround: _react.PropTypes.bool,
   spaceBetween: _react.PropTypes.bool,
-  grow: _react.PropTypes.string,
+  grow: _react.PropTypes.number,
   shrink: _react.PropTypes.bool,
   ellipsis: _react.PropTypes.bool,
   noMargin: _react.PropTypes.bool
