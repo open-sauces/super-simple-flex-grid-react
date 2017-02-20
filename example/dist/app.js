@@ -22222,7 +22222,8 @@ var FlexCell = function FlexCell(_ref) {
     return flexCellClass + '--' + modifier;
   };
 
-  var flexCellClassWithModifier = (0, _classnames3.default)(flexCellClass, (_classnames = {}, _defineProperty(_classnames, customClass, customClass), _defineProperty(_classnames, setClass(_style2.default.center || testClassList().center), center), _defineProperty(_classnames, setClass(_style2.default.centerH || testClassList().centerH), centerH), _defineProperty(_classnames, setClass(_style2.default.centerV || testClassList().centerV), centerV), _defineProperty(_classnames, setClass(_style2.default.startH || testClassList().startH), startH), _defineProperty(_classnames, setClass(_style2.default.endH || testClassList().endH), endH), _defineProperty(_classnames, setClass(_style2.default.startV || testClassList().startV), startV), _defineProperty(_classnames, setClass(_style2.default.endV || testClassList().endV), endV), _defineProperty(_classnames, setClass(_style2.default.spaceAround || testClassList().spaceAround), spaceAround), _defineProperty(_classnames, setClass(_style2.default.spaceBetween || testClassList().spaceBetween), spaceBetween), _defineProperty(_classnames, setClass('' + (_style2.default.grow || testClassList(grow).grow)), grow), _defineProperty(_classnames, setClass(_style2.default.shrink || testClassList().shrink), shrink), _defineProperty(_classnames, setClass(_style2.default.ellipsis || testClassList().ellipsis), ellipsis), _defineProperty(_classnames, setClass(_style2.default.noMargin || testClassList().noMargin), noMargin), _classnames));
+  var growClass = _style2.default.grow && _style2.default.grow + '-' + grow;
+  var flexCellClassWithModifier = (0, _classnames3.default)(flexCellClass, (_classnames = {}, _defineProperty(_classnames, customClass, customClass), _defineProperty(_classnames, setClass(_style2.default.center || testClassList().center), center), _defineProperty(_classnames, setClass(_style2.default.centerH || testClassList().centerH), centerH), _defineProperty(_classnames, setClass(_style2.default.centerV || testClassList().centerV), centerV), _defineProperty(_classnames, setClass(_style2.default.startH || testClassList().startH), startH), _defineProperty(_classnames, setClass(_style2.default.endH || testClassList().endH), endH), _defineProperty(_classnames, setClass(_style2.default.startV || testClassList().startV), startV), _defineProperty(_classnames, setClass(_style2.default.endV || testClassList().endV), endV), _defineProperty(_classnames, setClass(_style2.default.spaceAround || testClassList().spaceAround), spaceAround), _defineProperty(_classnames, setClass(_style2.default.spaceBetween || testClassList().spaceBetween), spaceBetween), _defineProperty(_classnames, setClass(growClass || testClassList(grow).grow), grow !== undefined), _defineProperty(_classnames, setClass(_style2.default.shrink || testClassList().shrink), shrink), _defineProperty(_classnames, setClass(_style2.default.ellipsis || testClassList().ellipsis), ellipsis), _defineProperty(_classnames, setClass(_style2.default.noMargin || testClassList().noMargin), noMargin), _classnames));
 
   return _react2.default.createElement(
     'div',
@@ -22309,10 +22310,25 @@ exports = module.exports = __webpack_require__(54)();
 
 
 // module
-exports.push([module.i, ".example {\n  background-color: #eee;\n  margin-bottom: 10px;\n  min-height: 30px; }\n\n.example-dark {\n  background-color: #ddd;\n  margin-bottom: 10px;\n  min-height: 30px; }\n\n.example-dark-custom-width {\n  background-color: #ddd;\n  margin-bottom: 10px;\n  min-height: 30px;\n  flex-basis: 150px; }\n\n.example-grow0 {\n  background-color: #eee;\n  margin-bottom: 10px;\n  min-height: 30px;\n  flex-basis: 150px; }\n\n.example-ellipsis {\n  margin: 0 auto;\n  width: 400px; }\n", ""]);
+exports.push([module.i, ".flex-row {\n  display: flex;\n  width: 100%; }\n  .flex-row .flex-row__cell--grow-0 {\n    flex-grow: 0; }\n  .flex-row .flex-row__cell--grow-1 {\n    flex-grow: 1; }\n  .flex-row .flex-row__cell--grow-2 {\n    flex-grow: 2; }\n  .flex-row .flex-row__cell--grow-3 {\n    flex-grow: 3; }\n  .flex-row .flex-row__cell--grow-4 {\n    flex-grow: 4; }\n  .flex-row .flex-row__cell--grow-5 {\n    flex-grow: 5; }\n  .flex-row .flex-row__cell--grow-6 {\n    flex-grow: 6; }\n  .flex-row .flex-row__cell--grow-7 {\n    flex-grow: 7; }\n  .flex-row .flex-row__cell--grow-8 {\n    flex-grow: 8; }\n  .flex-row .flex-row__cell--grow-9 {\n    flex-grow: 9; }\n  .flex-row .flex-row__cell--grow-10 {\n    flex-grow: 10; }\n  .flex-row .flex-row__cell--grow-11 {\n    flex-grow: 11; }\n  .flex-row .flex-row__cell--grow-12 {\n    flex-grow: 12; }\n  .flex-row .flex-row__cell--grow-13 {\n    flex-grow: 13; }\n  .flex-row .flex-row__cell--grow-14 {\n    flex-grow: 14; }\n  .flex-row .flex-row__cell--grow-15 {\n    flex-grow: 15; }\n  .flex-row .flex-row__cell--grow-16 {\n    flex-grow: 16; }\n  .flex-row .flex-row__cell--grow-17 {\n    flex-grow: 17; }\n  .flex-row .flex-row__cell--grow-18 {\n    flex-grow: 18; }\n  .flex-row .flex-row__cell--grow-19 {\n    flex-grow: 19; }\n  .flex-row .flex-row__cell--grow-20 {\n    flex-grow: 20; }\n  .flex-row__cell {\n    display: flex;\n    flex-basis: 0;\n    flex-grow: 1;\n    margin: 0 10px; }\n    .flex-row__cell:first-of-type {\n      margin-left: 0; }\n    .flex-row__cell:last-of-type {\n      margin-right: 0; }\n    .flex-row__cell--center {\n      justify-content: center;\n      align-items: center; }\n    .flex-row__cell--center-h {\n      justify-content: center; }\n    .flex-row__cell--center-v {\n      align-items: center; }\n    .flex-row__cell--start-h {\n      justify-content: flex-start; }\n    .flex-row__cell--end-h {\n      justify-content: flex-end; }\n    .flex-row__cell--start-v {\n      align-items: flex-start; }\n    .flex-row__cell--end-v {\n      align-items: flex-end; }\n    .flex-row__cell--space-around {\n      justify-content: space-around; }\n    .flex-row__cell--space-between {\n      justify-content: space-between; }\n    .flex-row__cell--shrink {\n      flex-shrink: 1;\n      flex-grow: 0;\n      flex-basis: inherit; }\n    .flex-row__cell--ellipsis {\n      overflow: hidden; }\n    .flex-row__cell--ellipsis__content {\n      white-space: nowrap;\n      overflow: hidden;\n      text-overflow: ellipsis; }\n    .flex-row__cell--no-margin {\n      margin: 0 !important; }\n\n.examples .flex-row__cell:after, .examples .flex-row__cell--space-around:before,\n.examples .flex-row__cell--space-between:before {\n  content: \"\";\n  width: 100px;\n  height: 50px;\n  background-color: #cbcbcb; }\n\n.container {\n  margin: 0 auto;\n  max-width: 600px; }\n\n.examples {\n  flex-direction: column;\n  width: 100%; }\n  .examples .flex-row__cell {\n    position: relative;\n    background-color: #f1f1f1;\n    margin-bottom: 10px;\n    height: 80px; }\n    .examples .flex-row__cell span {\n      position: absolute;\n      right: 8px;\n      bottom: 8px;\n      line-height: 13px;\n      font-family: sans-serif;\n      font-size: 13px;\n      color: #cbcbcb; }\n  .examples .flex-row__cell--ellipsis {\n    position: relative; }\n    .examples .flex-row__cell--ellipsis:after {\n      content: none; }\n  .examples .flex-row__cell--ellipsis__content {\n    padding: 8px;\n    font-size: 13px;\n    color: #0ad; }\n  .examples .custom-width {\n    min-height: 30px;\n    flex-basis: 150px; }\n  .examples .custom-width2 {\n    flex-basis: 260px; }\n    .examples .custom-width2 span {\n      color: #999; }\n", ""]);
 
 // exports
-
+exports.locals = {
+	"grow": "grow",
+	"center": "center",
+	"centerH": "center-h",
+	"centerV": "center-v",
+	"startH": "start-h",
+	"endH": "end-h",
+	"startV": "start-v",
+	"endV": "end-v",
+	"spaceAround": "space-around",
+	"spaceBetween": "space-between",
+	"shrink": "shrink",
+	"ellipsis": "ellipsis",
+	"ellipsisContent": "ellipsis__content",
+	"noMargin": "no-margin"
+};
 
 /***/ }),
 /* 186 */
@@ -22391,303 +22407,287 @@ __webpack_require__(86);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var FlexGridExample = function FlexGridExample() {
-  var exampleClass = 'example';
-  var exampleDarkClass = 'example-dark';
-  var exampleDarkCustomWidthClass = 'example-dark-custom-width';
-  var exampleGrow0Class = 'example-grow0';
-  var exampleEllipsisClass = 'example-ellipsis';
+  var customWidth = 'custom-width';
+  var customWidth2 = 'custom-width2';
+  var ellipsisText = 'Ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis';
 
   return _react2.default.createElement(
-    'div',
-    null,
+    _FlexGrid.FlexRow,
+    { customClass: 'container' },
     _react2.default.createElement(
-      'h4',
-      null,
-      'Regular examples'
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
+      _FlexGrid.FlexCell,
+      { customClass: 'examples' },
       _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { center: true, customClass: exampleClass },
-        'Center'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { centerH: true, customClass: exampleClass },
-        'Center H'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { centerV: true, customClass: exampleClass },
-        'Center V'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { startH: true, customClass: exampleClass },
-        'Start horizontal'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { endH: true, customClass: exampleClass },
-        'End horizontal'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { startV: true, customClass: exampleClass },
-        'Start vertical'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { endV: true, customClass: exampleClass },
-        'End vertical'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { spaceAround: true, customClass: exampleClass },
+        _FlexGrid.FlexRow,
+        null,
         _react2.default.createElement(
-          'div',
-          null,
-          'Space around'
+          _FlexGrid.FlexCell,
+          { center: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'center'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { centerH: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'centerH'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { centerV: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'centerV'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { startH: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'startH'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { endH: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'endH'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { startV: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'startV'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { endV: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'endV'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { spaceAround: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'spaceAround'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { spaceBetween: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'spaceBetween'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(_FlexGrid.FlexCell, null),
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { shrink: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'shrink'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(_FlexGrid.FlexCell, null),
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { shrink: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'shrink'
+          )
+        ),
+        _react2.default.createElement(_FlexGrid.FlexCell, null)
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(_FlexGrid.FlexCell, null),
+        _react2.default.createElement(_FlexGrid.FlexCell, null)
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { noMargin: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'noMargin'
+          )
         ),
         _react2.default.createElement(
-          'div',
-          null,
-          'Space around'
-        )
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
+          _FlexGrid.FlexCell,
+          { noMargin: true },
+          _react2.default.createElement(
+            'span',
+            null,
+            'noMargin'
+          )
+        ),
+        _react2.default.createElement(_FlexGrid.FlexCell, null)
+      ),
       _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { spaceBetween: true, customClass: exampleClass },
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(_FlexGrid.FlexCell, null),
         _react2.default.createElement(
-          'div',
-          null,
-          'Space between'
+          _FlexGrid.FlexCell,
+          { grow: 2 },
+          _react2.default.createElement(
+            'span',
+            null,
+            'grow2'
+          )
+        ),
+        _react2.default.createElement(_FlexGrid.FlexCell, null),
+        _react2.default.createElement(_FlexGrid.FlexCell, null)
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(_FlexGrid.FlexCell, null),
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { grow: 0, customClass: customWidth },
+          _react2.default.createElement(
+            'span',
+            null,
+            'grow0 | customClass'
+          )
+        ),
+        _react2.default.createElement(_FlexGrid.FlexCell, null),
+        _react2.default.createElement(_FlexGrid.FlexCell, null)
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { ellipsis: true },
+          ellipsisText,
+          _react2.default.createElement(
+            'span',
+            null,
+            'ellipsis'
+          )
+        ),
+        _react2.default.createElement(_FlexGrid.FlexCell, null),
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { ellipsis: true },
+          ellipsisText,
+          _react2.default.createElement(
+            'span',
+            null,
+            'ellipsis'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { ellipsis: true, grow: 2 },
+          ellipsisText,
+          _react2.default.createElement(
+            'span',
+            null,
+            'ellipsis | grow2'
+          )
+        ),
+        _react2.default.createElement(_FlexGrid.FlexCell, null),
+        _react2.default.createElement(_FlexGrid.FlexCell, null)
+      ),
+      _react2.default.createElement(
+        _FlexGrid.FlexRow,
+        null,
+        _react2.default.createElement(
+          _FlexGrid.FlexCell,
+          { ellipsis: true, noMargin: true },
+          ellipsisText,
+          _react2.default.createElement(
+            'span',
+            null,
+            'ellipsis | noMargin'
+          )
         ),
         _react2.default.createElement(
-          'div',
-          null,
-          'Space'
+          _FlexGrid.FlexCell,
+          { ellipsis: true, noMargin: true, grow: 0, customClass: customWidth2 },
+          ellipsisText,
+          _react2.default.createElement(
+            'span',
+            null,
+            'ellipsis | noMargin | grow0 | customClass'
+          )
         )
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell grow'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { shrink: true, customClass: exampleClass },
-        'Cell shrink'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell grow'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { shrink: true, customClass: exampleClass },
-        'Cell shrink'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell grow'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell more content'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { noMargin: true, customClass: exampleClass },
-        'Cell no margin'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { noMargin: true, customClass: exampleClass },
-        'Cell more content no margin'
-      )
-    ),
-    _react2.default.createElement('br', null),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { grow: 2, customClass: exampleClass },
-        'Cell Grow 2'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      null,
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { grow: 0, customClass: exampleGrow0Class },
-        'Cell with custom width'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleClass },
-        'Cell'
-      )
-    ),
-    _react2.default.createElement('br', null),
-    _react2.default.createElement(
-      'h4',
-      null,
-      'Ellipsis examples'
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      { customClass: exampleEllipsisClass },
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { ellipsis: true, customClass: exampleClass },
-        'Cell with more content than can be displayed and ellipsis'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { ellipsis: true, customClass: exampleClass },
-        'Cell with more content than can be displayed and ellipsis'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      { customClass: exampleEllipsisClass },
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { ellipsis: true, customClass: exampleClass },
-        'Cell with more content than can be displayed and ellipsis'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { customClass: exampleDarkClass },
-        'Cell'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      { customClass: exampleEllipsisClass },
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { ellipsis: true, grow: 2, customClass: exampleClass },
-        'Cell with more content than can be displayed and ellipsis with grow'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { shrink: true, customClass: exampleDarkClass },
-        'Cell'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      { customClass: exampleEllipsisClass },
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { ellipsis: true, customClass: exampleClass },
-        'Cell with more content than can be displayed and ellipsis with grow'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { ellipsis: true, grow: 0, customClass: exampleDarkCustomWidthClass },
-        'Cell with custom width'
-      )
-    ),
-    _react2.default.createElement(
-      _FlexGrid.FlexRow,
-      { customClass: exampleEllipsisClass },
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { ellipsis: true, noMargin: true, customClass: exampleClass },
-        'Cell with more content than can be displayed and ellipsis with grow and no margin'
-      ),
-      _react2.default.createElement(
-        _FlexGrid.FlexCell,
-        { ellipsis: true, noMargin: true, grow: 0, customClass: exampleDarkCustomWidthClass },
-        'Cell with custom width and no margin'
       )
     )
   );

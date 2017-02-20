@@ -38,7 +38,7 @@ const FlexCell = ({
   const flexCellClass = 'flex-row__cell';
   const setClass = modifier => `${flexCellClass}--${modifier}`;
 
-  const growClass = `${classList.grow}-${grow}`;
+  const growClass = classList.grow && `${classList.grow}-${grow}`;
   const flexCellClassWithModifier = classnames(flexCellClass, {
     [customClass]: customClass,
     [setClass(classList.center       || testClassList().center)]: center,
