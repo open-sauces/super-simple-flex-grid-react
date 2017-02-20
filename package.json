@@ -7,10 +7,11 @@
     "build": "webpack",
     "dev": "webpack-dev-server --progress --watch",
     "prepublish": "babel src/FlexGrid --ignore *.test.js --out-dir ./dist",
+    "deploy": "npm run coverage && npm run test",
     "lint": "eslint src",
     "test": "npm run lint && mocha-webpack",
     "test:watch": "mocha-webpack --watch",
-    "coverage": "cross-env BABEL_ENV=test nyc report --reporter=text-lcov | coveralls npm run test"
+    "coverage": "cross-env BABEL_ENV=test nyc report --reporter=text-lcov | coveralls"
   },
   "repository": "git+https://github.com/open-sauces/super-simple-flex-grid-react.git",
   "author": "Vincent Bollaert",
