@@ -3,13 +3,22 @@
   "env": {
     "test": {
       "plugins": [
-        ["istanbul", {
-          "useInlineSourceMaps": false,
-          "exclude": [
-            "webpack.config-test.babel.js",
-            "**/**/*.js"
-          ],
-        }]
+        [
+          "istanbul", {
+            "useInlineSourceMaps": false,
+            "exclude": [
+              "webpack.config-test.babel.js",
+              "**/**/*.js"
+            ],
+          },
+        ],
+        [
+          "transform-es2015-modules-umd", {
+            "globals": {
+              "es6-promise": "Promise"
+            }
+          },
+        ],
       ]
     }
   }
