@@ -38,6 +38,7 @@ const FlexCell = ({
   const flexCellClass = 'flex-row__cell';
   const setClass = modifier => `${flexCellClass}--${modifier}`;
 
+  const growClass = `${classList.grow}-${grow}`;
   const flexCellClassWithModifier = classnames(flexCellClass, {
     [customClass]: customClass,
     [setClass(classList.center       || testClassList().center)]: center,
@@ -49,7 +50,7 @@ const FlexCell = ({
     [setClass(classList.endV         || testClassList().endV)]: endV,
     [setClass(classList.spaceAround  || testClassList().spaceAround)]: spaceAround,
     [setClass(classList.spaceBetween || testClassList().spaceBetween)]: spaceBetween,
-    [setClass(`${classList.grow      || testClassList(grow).grow}`)]: grow,
+    [setClass(growClass              || testClassList(grow).grow)]: grow !== undefined,
     [setClass(classList.shrink       || testClassList().shrink)]: shrink,
     [setClass(classList.ellipsis     || testClassList().ellipsis)]: ellipsis,
     [setClass(classList.noMargin     || testClassList().noMargin)]: noMargin,
