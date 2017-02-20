@@ -9879,7 +9879,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(186);
+var content = __webpack_require__(185);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(82)(content, {});
@@ -9888,8 +9888,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./style.scss", function() {
-			var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./style.scss");
+		module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./style.scss", function() {
+			var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./style.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -22309,7 +22309,21 @@ exports = module.exports = __webpack_require__(54)();
 
 
 // module
-exports.push([module.i, ".flex-row {\n  display: flex;\n  width: 100%; }\n  .flex-row .flex-row__cell--grow-0 {\n    flex-grow: 0; }\n  .flex-row .flex-row__cell--grow-1 {\n    flex-grow: 1; }\n  .flex-row .flex-row__cell--grow-2 {\n    flex-grow: 2; }\n  .flex-row .flex-row__cell--grow-3 {\n    flex-grow: 3; }\n  .flex-row .flex-row__cell--grow-4 {\n    flex-grow: 4; }\n  .flex-row .flex-row__cell--grow-5 {\n    flex-grow: 5; }\n  .flex-row .flex-row__cell--grow-6 {\n    flex-grow: 6; }\n  .flex-row .flex-row__cell--grow-7 {\n    flex-grow: 7; }\n  .flex-row .flex-row__cell--grow-8 {\n    flex-grow: 8; }\n  .flex-row .flex-row__cell--grow-9 {\n    flex-grow: 9; }\n  .flex-row .flex-row__cell--grow-10 {\n    flex-grow: 10; }\n  .flex-row .flex-row__cell--grow-11 {\n    flex-grow: 11; }\n  .flex-row .flex-row__cell--grow-12 {\n    flex-grow: 12; }\n  .flex-row .flex-row__cell--grow-13 {\n    flex-grow: 13; }\n  .flex-row .flex-row__cell--grow-14 {\n    flex-grow: 14; }\n  .flex-row .flex-row__cell--grow-15 {\n    flex-grow: 15; }\n  .flex-row .flex-row__cell--grow-16 {\n    flex-grow: 16; }\n  .flex-row .flex-row__cell--grow-17 {\n    flex-grow: 17; }\n  .flex-row .flex-row__cell--grow-18 {\n    flex-grow: 18; }\n  .flex-row .flex-row__cell--grow-19 {\n    flex-grow: 19; }\n  .flex-row .flex-row__cell--grow-20 {\n    flex-grow: 20; }\n  .flex-row__cell {\n    display: flex;\n    flex-basis: 0;\n    flex-grow: 1;\n    margin: 0 10px; }\n    .flex-row__cell:first-of-type {\n      margin-left: 0; }\n    .flex-row__cell:last-of-type {\n      margin-right: 0; }\n    .flex-row__cell--center {\n      justify-content: center;\n      align-items: center; }\n    .flex-row__cell--center-h {\n      justify-content: center; }\n    .flex-row__cell--center-v {\n      align-items: center; }\n    .flex-row__cell--start-h {\n      justify-content: flex-start; }\n    .flex-row__cell--end-v {\n      justify-content: flex-end; }\n    .flex-row__cell--end-v {\n      align-items: flex-start; }\n    .flex-row__cell--end-v {\n      align-items: flex-end; }\n    .flex-row__cell--space-around {\n      justify-content: space-around; }\n    .flex-row__cell--space-between {\n      justify-content: space-between; }\n    .flex-row__cell--shrink {\n      flex-shrink: 1;\n      flex-grow: 0;\n      flex-basis: inherit; }\n    .flex-row__cell--ellipsis {\n      overflow: hidden; }\n    .flex-row__cell--ellipsis__content {\n      white-space: nowrap;\n      overflow: hidden;\n      text-overflow: ellipsis; }\n    .flex-row__cell--no-margin {\n      margin: 0 !important; }\n", ""]);
+exports.push([module.i, ".example {\n  background-color: #eee;\n  margin-bottom: 10px;\n  min-height: 30px; }\n\n.example-dark {\n  background-color: #ddd;\n  margin-bottom: 10px;\n  min-height: 30px; }\n\n.example-dark-custom-width {\n  background-color: #ddd;\n  margin-bottom: 10px;\n  min-height: 30px;\n  flex-basis: 150px; }\n\n.example-grow0 {\n  background-color: #eee;\n  margin-bottom: 10px;\n  min-height: 30px;\n  flex-basis: 150px; }\n\n.example-ellipsis {\n  margin: 0 auto;\n  width: 400px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(54)();
+// imports
+
+
+// module
+exports.push([module.i, ".flex-row {\n  display: flex;\n  width: 100%; }\n  .flex-row .flex-row__cell--grow-0 {\n    flex-grow: 0; }\n  .flex-row .flex-row__cell--grow-1 {\n    flex-grow: 1; }\n  .flex-row .flex-row__cell--grow-2 {\n    flex-grow: 2; }\n  .flex-row .flex-row__cell--grow-3 {\n    flex-grow: 3; }\n  .flex-row .flex-row__cell--grow-4 {\n    flex-grow: 4; }\n  .flex-row .flex-row__cell--grow-5 {\n    flex-grow: 5; }\n  .flex-row .flex-row__cell--grow-6 {\n    flex-grow: 6; }\n  .flex-row .flex-row__cell--grow-7 {\n    flex-grow: 7; }\n  .flex-row .flex-row__cell--grow-8 {\n    flex-grow: 8; }\n  .flex-row .flex-row__cell--grow-9 {\n    flex-grow: 9; }\n  .flex-row .flex-row__cell--grow-10 {\n    flex-grow: 10; }\n  .flex-row .flex-row__cell--grow-11 {\n    flex-grow: 11; }\n  .flex-row .flex-row__cell--grow-12 {\n    flex-grow: 12; }\n  .flex-row .flex-row__cell--grow-13 {\n    flex-grow: 13; }\n  .flex-row .flex-row__cell--grow-14 {\n    flex-grow: 14; }\n  .flex-row .flex-row__cell--grow-15 {\n    flex-grow: 15; }\n  .flex-row .flex-row__cell--grow-16 {\n    flex-grow: 16; }\n  .flex-row .flex-row__cell--grow-17 {\n    flex-grow: 17; }\n  .flex-row .flex-row__cell--grow-18 {\n    flex-grow: 18; }\n  .flex-row .flex-row__cell--grow-19 {\n    flex-grow: 19; }\n  .flex-row .flex-row__cell--grow-20 {\n    flex-grow: 20; }\n  .flex-row__cell {\n    display: flex;\n    flex-basis: 0;\n    flex-grow: 1;\n    margin: 0 10px; }\n    .flex-row__cell:first-of-type {\n      margin-left: 0; }\n    .flex-row__cell:last-of-type {\n      margin-right: 0; }\n    .flex-row__cell--center {\n      justify-content: center;\n      align-items: center; }\n    .flex-row__cell--center-h {\n      justify-content: center; }\n    .flex-row__cell--center-v {\n      align-items: center; }\n    .flex-row__cell--start-h {\n      justify-content: flex-start; }\n    .flex-row__cell--end-h {\n      justify-content: flex-end; }\n    .flex-row__cell--start-v {\n      align-items: flex-start; }\n    .flex-row__cell--end-v {\n      align-items: flex-end; }\n    .flex-row__cell--space-around {\n      justify-content: space-around; }\n    .flex-row__cell--space-between {\n      justify-content: space-between; }\n    .flex-row__cell--shrink {\n      flex-shrink: 1;\n      flex-grow: 0;\n      flex-basis: inherit; }\n    .flex-row__cell--ellipsis {\n      overflow: hidden; }\n    .flex-row__cell--ellipsis__content {\n      white-space: nowrap;\n      overflow: hidden;\n      text-overflow: ellipsis; }\n    .flex-row__cell--no-margin {\n      margin: 0 !important; }\n", ""]);
 
 // exports
 exports.locals = {
@@ -22330,27 +22344,13 @@ exports.locals = {
 };
 
 /***/ }),
-/* 186 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(54)();
-// imports
-
-
-// module
-exports.push([module.i, ".example {\n  background-color: #eee;\n  margin-bottom: 10px;\n  min-height: 30px; }\n\n.example-dark {\n  background-color: #ddd;\n  margin-bottom: 10px;\n  min-height: 30px; }\n\n.example-dark-custom-width {\n  background-color: #ddd;\n  margin-bottom: 10px;\n  min-height: 30px;\n  flex-basis: 150px; }\n\n.example-grow0 {\n  background-color: #eee;\n  margin-bottom: 10px;\n  min-height: 30px;\n  flex-basis: 150px; }\n\n.example-ellipsis {\n  margin: 0 auto;\n  width: 400px; }\n", ""]);
-
-// exports
-
-
-/***/ }),
 /* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(185);
+var content = __webpack_require__(186);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(82)(content, {});

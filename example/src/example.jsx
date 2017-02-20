@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { FlexRow, FlexCell } from '../../FlexGrid';
+import { FlexRow, FlexCell } from '../../src/FlexGrid';
 import './style.scss';
 
 const FlexGridExample = () => {

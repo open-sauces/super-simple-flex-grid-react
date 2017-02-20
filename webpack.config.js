@@ -1,9 +1,9 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-const examplePath = './src/example';
-const entryPath = `${examplePath}/src/app.jsx`;
-const outputPath = `${examplePath}/build`;
+const examplePath = './example';
+const entryPath = `${examplePath}/src/example.jsx`;
+const outputPath = `${examplePath}/dist`;
 
 module.exports = () => ({
   entry: {
@@ -62,7 +62,7 @@ module.exports = () => ({
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/example/src/index.html',
+      template: './example/src/index.html',
     }),
   ],
 });
