@@ -14,29 +14,29 @@ $ npm i super-simple-flex-grid
 
 ### Usage
 ```javascript
-import { FlexRow, FlexCell } from 'node_modules/super-simple-flex-grid-react/FlexGrid';
+import { FlexRow as Row, FlexCell as Col } from 'node_modules/super-simple-flex-grid-react/FlexGrid';
 
 const FlexGridExample = () => (
-  <FlexRow>
-    <FlexCell grow={2}>
-      Cell Grow 2
-    </FlexCell>
-    <FlexCell center customClass={exampleClass}>
+  <Row>
+    <Col grow={2}>
+      Col Grow 2
+    </Col>
+    <Col center customClass={exampleClass}>
       Center
-    </FlexCell>
-    <FlexCell grow={2}>
-      Cell Grow 2
-    </FlexCell>
-  </FlexRow>
+    </Col>
+    <Col grow={2}>
+      Col Grow 2
+    </Col>
+  </Row>
 );
 ```
 
 ### Options
 
 ##### GridRow
-| Prop        | Type   | Description                     |
-| ----------- | ------ | ------------------------------- |
-| GridRow     | children    | any    | Child `<FlexCell />` components |
+| Prop        | Type     | Description                     |
+| ----------- | -------- | ------------------------------- |
+| children    | any      | Child `<FlexCell />` components |
 | customClass | `string` | Custom class                    |
 
 ##### GridCell
