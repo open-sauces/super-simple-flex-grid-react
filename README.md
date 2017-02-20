@@ -5,7 +5,7 @@
 
 A react implementation of the [Super Simple Flex Grid](https://github.com/open-sauces/super-simple-flex-grid)
 
-**[Demo](https://open-sauces.github.io/super-simple-flex-grid-react/src/example/build)**
+**[Demo](https://open-sauces.github.io/super-simple-flex-grid-react/example/dist)**
 
 ### Installing
 
