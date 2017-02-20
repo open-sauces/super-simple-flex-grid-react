@@ -7,7 +7,6 @@
     "build": "webpack",
     "dev": "webpack-dev-server --progress --watch",
     "prepublish": "babel src/FlexGrid --ignore *.test.js --out-dir ./dist",
-    "deploy": "npm run prepublish && npm run coverage && npm run test",
     "lint": "eslint src",
     "test": "npm run lint && mocha-webpack",
     "test:watch": "mocha-webpack --watch",
