@@ -1,26 +1,73 @@
-.example {
-  background-color: #eee;
-  margin-bottom: 10px;
-  min-height: 30px;
-};
-.example-dark {
-  background-color: #ddd;
-  margin-bottom: 10px;
-  min-height: 30px;
-};
-.example-dark-custom-width {
-  background-color: #ddd;
-  margin-bottom: 10px;
-  min-height: 30px;
-  flex-basis: 150px;
-};
-.example-grow0 {
-  background-color: #eee;
-  margin-bottom: 10px;
-  min-height: 30px;
-  flex-basis: 150px;
-};
-.example-ellipsis {
+@import 'node_modules/super-simple-flex-grid/src/style.scss';
+
+%pseudoContent {
+  content: "";
+  width: 100px;
+  height: 50px;
+  background-color: #cbcbcb;
+}
+
+.container {
   margin: 0 auto;
-  width: 400px;
-};
+  max-width: 600px;
+}
+
+.examples {
+  flex-direction: column;
+  width: 100%;
+
+  .flex-row__cell {
+    position: relative;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    height: 80px;
+
+    span {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      line-height: 13px;
+      font-family: sans-serif;
+      font-size: 13px;
+      color: #cbcbcb;
+    }
+
+    &:after {
+      @extend %pseudoContent;
+    }
+  }
+
+  .flex-row__cell--#{map-get($modifiers, spaceAround)},
+  .flex-row__cell--#{map-get($modifiers, spaceBetween)} {
+    &:before {
+      @extend %pseudoContent;
+    }
+  }
+
+  .flex-row__cell--#{map-get($modifiers, ellipsis)} {
+    position: relative;
+
+    &:after {
+      content: none;
+    }
+  }
+
+  .flex-row__cell--#{map-get($modifiers, ellipsisContent)} {
+    padding: 8px;
+    font-size: 13px;
+    color: #0ad;
+  }
+
+  .custom-width {
+    min-height: 30px;
+    flex-basis: 150px;
+  };
+
+  .custom-width2 {
+    flex-basis: 260px;
+
+    span {
+      color: #999;
+    }
+  };
+}

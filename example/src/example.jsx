@@ -1,203 +1,122 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { FlexRow, FlexCell } from '../../src/FlexGrid';
+import { FlexRow as Row, FlexCell as Col } from '../../src/FlexGrid';
 import './style.scss';
 
 const FlexGridExample = () => {
-  const exampleClass = 'example';
-  const exampleDarkClass = 'example-dark';
-  const exampleDarkCustomWidthClass = 'example-dark-custom-width';
-  const exampleGrow0Class = 'example-grow0';
-  const exampleEllipsisClass = 'example-ellipsis';
+  const customWidth = 'custom-width';
+  const customWidth2 = 'custom-width2';
+  const ellipsisText = 'Ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis';
 
   return (
-    <div>
-      <h4>Regular examples</h4>
-      <FlexRow>
-        <FlexCell center customClass={exampleClass}>
-          Center
-        </FlexCell>
-      </FlexRow>
+    <Row customClass="container">
+      <Col customClass="examples">
+        <Row>
+          <Col center><span>center</span></Col>
+        </Row>
 
-      <FlexRow>
-        <FlexCell centerH customClass={exampleClass}>
-          Center H
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col centerH><span>centerH</span></Col>
+        </Row>
 
-      <FlexRow>
-        <FlexCell centerV customClass={exampleClass}>
-          Center V
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col centerV><span>centerV</span></Col>
+        </Row>
 
-      <FlexRow>
-        <FlexCell startH customClass={exampleClass}>
-          Start horizontal
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col startH><span>startH</span></Col>
+        </Row>
 
-      <FlexRow>
-        <FlexCell endH customClass={exampleClass}>
-          End horizontal
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col endH><span>endH</span></Col>
+        </Row>
 
-      <FlexRow>
-        <FlexCell startV customClass={exampleClass}>
-          Start vertical
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col startV><span>startV</span></Col>
+        </Row>
 
-      <FlexRow>
-        <FlexCell endV customClass={exampleClass}>
-          End vertical
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col endV><span>endV</span></Col>
+        </Row>
 
-      <FlexRow>
-        <FlexCell spaceAround customClass={exampleClass}>
-          <div>
-            Space around
-          </div>
-          <div>
-            Space around
-          </div>
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col spaceAround><span>spaceAround</span></Col>
+        </Row>
 
-      <FlexRow>
-        <FlexCell spaceBetween customClass={exampleClass}>
-          <div>
-            Space between
-          </div>
-          <div>
-            Space
-          </div>
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col spaceBetween><span>spaceBetween</span></Col>
+        </Row>
 
-      <FlexRow>
-        <FlexCell customClass={exampleClass}>
-          Cell grow
-        </FlexCell>
-        <FlexCell shrink customClass={exampleClass}>
-          Cell shrink
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col />
+          <Col shrink><span>shrink</span></Col>
+        </Row>
 
-      <FlexRow>
-        <FlexCell customClass={exampleClass}>
-          Cell grow
-        </FlexCell>
-        <FlexCell shrink customClass={exampleClass}>
-          Cell shrink
-        </FlexCell>
-        <FlexCell customClass={exampleClass}>
-          Cell grow
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col />
+          <Col shrink><span>shrink</span></Col>
+          <Col />
+        </Row>
 
-      <FlexRow>
-        <FlexCell customClass={exampleClass}>
-          Cell
-        </FlexCell>
-        <FlexCell customClass={exampleClass}>
-          Cell more content
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col />
+          <Col />
+        </Row>
 
-      <FlexRow>
-        <FlexCell noMargin customClass={exampleClass}>
-          Cell no margin
-        </FlexCell>
-        <FlexCell noMargin customClass={exampleClass}>
-          Cell more content no margin
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col noMargin><span>noMargin</span></Col>
+          <Col noMargin><span>noMargin</span></Col>
+          <Col />
+        </Row>
 
-      <br />
+        <Row>
+          <Col />
+          <Col grow={2}><span>grow2</span></Col>
+          <Col />
+          <Col />
+        </Row>
 
-      <FlexRow>
-        <FlexCell customClass={exampleClass}>
-          Cell
-        </FlexCell>
-        <FlexCell grow={2} customClass={exampleClass}>
-          Cell Grow 2
-        </FlexCell>
-        <FlexCell customClass={exampleClass}>
-          Cell
-        </FlexCell>
-        <FlexCell customClass={exampleClass}>
-          Cell
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col />
+          <Col grow={0} customClass={customWidth}><span>grow0 | customClass</span></Col>
+          <Col />
+          <Col />
+        </Row>
 
-      <FlexRow>
-        <FlexCell customClass={exampleClass}>
-          Cell
-        </FlexCell>
-        <FlexCell grow={0} customClass={exampleGrow0Class}>
-          Cell with custom width
-        </FlexCell>
-        <FlexCell customClass={exampleClass}>
-          Cell
-        </FlexCell>
-        <FlexCell customClass={exampleClass}>
-          Cell
-        </FlexCell>
-      </FlexRow>
+        <Row>
+          <Col ellipsis>
+            {ellipsisText}
+            <span>ellipsis</span>
+          </Col>
+          <Col />
+          <Col ellipsis>
+            {ellipsisText}
+            <span>ellipsis</span>
+          </Col>
+        </Row>
 
-      <br />
+        <Row>
+          <Col ellipsis grow={2}>
+            {ellipsisText}
+            <span>ellipsis | grow2</span>
+          </Col>
+          <Col />
+          <Col />
+        </Row>
 
-      <h4>Ellipsis examples</h4>
-
-      <FlexRow customClass={exampleEllipsisClass}>
-        <FlexCell ellipsis customClass={exampleClass}>
-          Cell with more content than can be displayed and ellipsis
-        </FlexCell>
-        <FlexCell ellipsis customClass={exampleClass}>
-          Cell with more content than can be displayed and ellipsis
-        </FlexCell>
-      </FlexRow>
-
-      <FlexRow customClass={exampleEllipsisClass}>
-        <FlexCell ellipsis customClass={exampleClass}>
-          Cell with more content than can be displayed and ellipsis
-        </FlexCell>
-        <FlexCell customClass={exampleDarkClass}>
-          Cell
-        </FlexCell>
-      </FlexRow>
-
-      <FlexRow customClass={exampleEllipsisClass}>
-        <FlexCell ellipsis grow={2} customClass={exampleClass}>
-          Cell with more content than can be displayed and ellipsis with grow
-        </FlexCell>
-        <FlexCell shrink customClass={exampleDarkClass}>
-          Cell
-        </FlexCell>
-      </FlexRow>
-
-      <FlexRow customClass={exampleEllipsisClass}>
-        <FlexCell ellipsis customClass={exampleClass}>
-          Cell with more content than can be displayed and ellipsis with grow
-        </FlexCell>
-        <FlexCell ellipsis grow={0} customClass={exampleDarkCustomWidthClass}>
-          Cell with custom width
-        </FlexCell>
-      </FlexRow>
-
-      <FlexRow customClass={exampleEllipsisClass}>
-        <FlexCell ellipsis noMargin customClass={exampleClass}>
-          Cell with more content than can be displayed and ellipsis with grow and no margin
-        </FlexCell>
-        <FlexCell ellipsis noMargin grow={0} customClass={exampleDarkCustomWidthClass}>
-          Cell with custom width and no margin
-        </FlexCell>
-      </FlexRow>
-    </div>
+        <Row>
+          <Col ellipsis noMargin>
+            {ellipsisText}
+            <span>ellipsis | noMargin</span>
+          </Col>
+          <Col ellipsis noMargin grow={0} customClass={customWidth2}>
+            {ellipsisText}
+            <span>ellipsis | noMargin | grow0 | customClass</span>
+          </Col>
+        </Row>
+      </Col>
+    </Row>
   );
 };
 
