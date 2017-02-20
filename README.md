@@ -28,21 +28,18 @@ const FlexGridExample = () => (
       Cell Grow 2
     </FlexCell>
   </FlexRow>
-</FlexGridExample>
+);
 ```
 
 ### Options
-#
 
 ##### GridRow
-#
 | Prop        | Type   | Description                     |
 | ----------- | ------ | ------------------------------- |
 | GridRow     | children    | any    | Child `<FlexCell />` components |
 | customClass | `string` | Custom class                    |
 
 ##### GridCell
-#
 | Prop         | Type   | Description         | CSS                                                  |
 | ------------ | -------| --------------------| ---------------------------------------------------- |
 | children     | any    | content of cells    |                                                      |
