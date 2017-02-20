@@ -1,6 +1,6 @@
 {
   "name": "super-simple-flex-grid-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A react super simple flex grid",
   "main": "src/FlexGrid",
   "scripts": {
