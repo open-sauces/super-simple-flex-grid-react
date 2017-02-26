@@ -18,7 +18,7 @@ $ npm i super-simple-flex-grid-react
 
 ### Usage
 ```javascript
-import { FlexRow as Row, FlexCell as Col } from 'node_modules/super-simple-flex-grid-react/FlexGrid';
+import { FlexRow as Row, FlexCell as Col } from 'node_modules/super-simple-flex-grid-react';
 
 const FlexGridExample = () => (
   <Row>
@@ -57,10 +57,10 @@ const FlexGridExample = () => (
 | [endV]         | `bool`   | end vertically      | `align-items: flex-end`                              |
 | [spaceAround]  | `bool`   | space around        | `justify-content: space-around`                      |
 | [spaceBetween] | `bool`   | space between       | `justify-content: space-between`                     |
-| [grow]         | `int`    | grow                | `flex-grow: x`                                       |
 | [shrink]       | `bool`   | shrink              | `flex-shrink: 1; flex-grow: 0; flex-basis: inherit;` |
-| [ellipsis]     | `bool`   | ellipse text        | `overflow: hidden` **[^1]**                          |
 | [noMargin]     | `bool`   | no margin           | `margin: 0 !important`                               |
+| [grow]         | `int`    | grow                | `flex-grow: x`                                       |
+| [ellipsis]     | `bool`   | ellipse text        | `overflow: hidden` **[^1]**                          |
 
 **[^1]**  Ellipsis prop also adds a child `div` that contains the following CSS:
 ```scss
@@ -115,7 +115,7 @@ MIT
 [noMargin]: <https://open-sauces.github.io/super-simple-flex-grid-react/example/dist/#noMargin>
 
 
-[Super-simple-flex-grid]: <https://github.com/open-sauces/super-simple-flex-grid>
+[Super simple flex grid]: <https://github.com/open-sauces/super-simple-flex-grid>
 [React]: <https://facebook.github.io/react>
 [Webpack]: <http://webpack.github.io>
 [Babel]: <https://babeljs.io>
