@@ -5,11 +5,13 @@
 
 A react implementation of the [Super Simple Flex Grid]
 
-**[Demo]**
+### What the grid is
+ - An HTML centric approach to Flexbox, with emphasis on customizability through props.
 
-**[NPM]**
+### What the grid is not
+ - Viewport-specific responsive: In the real world, design often requires pixel perfect implementation. Having responsive styles dictated in HTML through [viewport]-[grow1/grow2/hide/show] classes as well as custom css is a pain and hassle to maintain. With this grid system, all responsive behavior is handled with custom CSS.
 
-**[Github]**
+**[Demo]** | **[NPM]** | **[Github]**
 
 ### Installing
 ```sh
@@ -63,7 +65,7 @@ const FlexGridExample = () => (
 | [ellipsis]     | `bool`   | ellipse text        | `overflow: hidden` **[^1]**                          |
 
 **[^1]**  Ellipsis prop also adds a child `div` that contains the following CSS:
-```scss
+```css
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
@@ -88,6 +90,15 @@ Super-simple-flex-grid-react uses a number of open source projects:
 ```sh
 $ npm test
 ```
+
+### To do
+* Rename FlexRow and FlexCell components to Row and Col
+* Use CSS Modules
+* Create Codepen example
+* Add Karma and get rid of test classes
+* Add outstanding tests
+* Configure Travis to push to Github
+* Remove unnecessary props, such as startH and startV
 
 License
 ----
