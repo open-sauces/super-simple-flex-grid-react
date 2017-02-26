@@ -2,6 +2,7 @@ import React from 'react';
 import { FlexRow as Row, FlexCell as Col } from '../../src/FlexGrid';
 
 import './theme-one-light.css';
+import './theme-overrides.scss';
 
 const Markdown = (props) => {
   const html = {
