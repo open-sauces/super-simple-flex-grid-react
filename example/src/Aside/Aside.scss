@@ -1,0 +1,39 @@
+.aside {
+  position: fixed;
+  flex-direction: column;
+  color: #fff;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    line-height: 1;
+    font-size: 20px;
+  }
+
+  &__section {
+    margin-bottom: 20px;
+
+    &-title {
+      margin: 0;
+      margin-bottom: 5px;
+      line-height: 1;
+      font-size: 17px;
+    }
+
+    &-list {
+      margin: 0;
+      padding-left: 10px;
+      font-size: 12px;
+      list-style-type: none;
+
+      &__item__link {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
