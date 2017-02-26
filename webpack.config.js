@@ -7,7 +7,7 @@ const outputPath = `${examplePath}/dist`;
 
 module.exports = () => ({
   entry: {
-    main: entryPath,
+    main: path.resolve(__dirname, entryPath),
   },
   devServer: {
     inline: true,
@@ -19,7 +19,7 @@ module.exports = () => ({
   },
   output: {
     filename: 'app.js',
-    path: path.resolve(outputPath),
+    path: path.resolve(__dirname, outputPath),
   },
   externals: {
     cheerio: 'window',
@@ -31,18 +31,20 @@ module.exports = () => ({
     rules: [
       {
         test: /\.(js|jsx)$/,
-        use: [{
-          loader: 'babel-loader',
-          options: {
-            presets: ['es2015', 'react'],
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['es2015', 'stage-0', 'react'],
+            },
           },
-        }],
+        ],
         exclude: [
           '/node_modules/',
         ],
       },
       {
-        test: /\.css$/,
+        test: /\.(css|scss)$/,
         use: [
           'style-loader',
           {
@@ -55,8 +57,29 @@ module.exports = () => ({
         ],
       },
       {
-        test: /\.scss$/,
-        loader: 'style-loader!css-loader!sass-loader',
+        test: /\.md$/,
+        use: [
+          {
+            loader: 'html-loader',
+          },
+          {
+            loader: 'highlight-loader',
+          },
+          {
+            loader: 'markdown-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'example/font/**/[name].[ext]',
+            },
+          },
+        ],
       },
     ],
   },
