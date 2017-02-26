@@ -1,3 +1,4 @@
+export const CUSTOM_CLASS = 'customClass';
 export const CENTER = 'center';
 export const CENTER_H = 'centerH';
 export const CENTER_V = 'centerV';

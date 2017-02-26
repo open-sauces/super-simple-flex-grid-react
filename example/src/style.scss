@@ -96,8 +96,16 @@ body {
     color: $color-blue;
   }
 
+  .custom-class {
+    background-color: $example-pseudo-bg !important;
+
+    &:after {
+      background-color: $example-bg !important;
+    }
+  }
+
   .custom-width {
-    flex-basis: 150px;
+    flex-basis: 180px;
   };
 
   .custom-width2 {

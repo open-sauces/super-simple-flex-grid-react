@@ -5,6 +5,7 @@ import { FlexRow as Row, FlexCell as Col } from '../../src/FlexGrid';
 import Markdown from '../markdown';
 import Aside from './Aside';
 
+import customClassMD from '../documentation/customClass.md';
 import centerMD from '../documentation/center.md';
 import centerHMD from '../documentation/centerH.md';
 import centerVMD from '../documentation/centerV.md';
@@ -27,6 +28,7 @@ import ellipsisNoMarginMD from '../documentation/ellipsisNoMargin.md';
 import './style.scss';
 
 const FlexGridExample = () => {
+  const customClass = 'custom-class';
   const customWidth = 'custom-width';
   const customWidth2 = 'custom-width2';
   const ellipsisText = 'Ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis ellipsis';
@@ -37,6 +39,13 @@ const FlexGridExample = () => {
       <Aside />
       <Row customClass="container">
         <Col customClass="examples">
+          <div className={exampleClass} data-prop="customClass" id="customClass">
+            <Row>
+              <Col customClass={customClass} />
+            </Row>
+            <Markdown html={customClassMD} />
+          </div>
+
           <div className={exampleClass} data-prop="center" id="center">
             <Row>
               <Col center />
