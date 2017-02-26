@@ -11,6 +11,8 @@ A react implementation of the [Super Simple Flex Grid]
 ### What the grid is not
  - Viewport-specific responsive: In the real world, design often requires pixel perfect implementation. Having responsive styles dictated in HTML through [viewport]-[grow1/grow2/hide/show] classes as well as custom css is a pain and hassle to maintain. With this grid system, all responsive behavior is handled with custom CSS.
 
+----
+
 **[Demo]** | **[NPM]** | **[Github]**
 
 ### Installing
@@ -74,7 +76,7 @@ text-overflow: ellipsis;
 ### Tech
 Super-simple-flex-grid-react uses a number of open source projects:
 
-* [Super-simple-flex-grid] - super simple flex grid
+* [Super simple flex grid] - super simple flex grid
 * [React] - view library
 * [Webpack] - module bundler
 * [Babel] - javaScript compiler
@@ -107,7 +109,7 @@ MIT
 
 [Demo]: <https://open-sauces.github.io/super-simple-flex-grid-react/example/dist>
 [NPM]: <https://www.npmjs.com/package/super-simple-flex-grid-react>
-[Github]: <https://open-sauces.github.io/super-simple-flex-grid-react>
+[Github]: <https://github.com/open-sauces/super-simple-flex-grid-react>
 
 
 [customClass]: <https://open-sauces.github.io/super-simple-flex-grid-react/example/dist/#customClass>
