@@ -1,0 +1,13 @@
+export const CENTER = 'center';
+export const CENTER_H = 'centerH';
+export const CENTER_V = 'centerV';
+export const START_H = 'startH';
+export const END_H = 'endH';
+export const START_V = 'startV';
+export const END_V = 'endV';
+export const SPACE_AROUND = 'spaceAround';
+export const SPACE_BETWEEN = 'spaceBetween';
+export const SHRINK = 'shrink';
+export const NO_MARGIN = 'noMargin';
+export const GROW = 'grow';
+export const ELLIPSIS = 'ellipsis';
