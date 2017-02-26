@@ -6,7 +6,9 @@
 A react implementation of the [Super Simple Flex Grid]
 
 **[Demo]**
+
 **[NPM]**
+
 **[Github]**
 
 ### Installing
@@ -44,7 +46,7 @@ const FlexGridExample = () => (
 ##### GridCell
 | Prop           | Type     | Description         | CSS                                                  |
 | -------------- | ---------| --------------------| ---------------------------------------------------- |
-| [children]     | any      | content of cells    |                                                      |
+| children       | any      | content of cells    |                                                      |
 | [customClass]  | `string` | custom class        |                                                      |
 | [center]       | `bool`   | center              | `justify-content: center; align-items: center;`      |
 | [centerH]      | `bool`   | center horizontally | `justify-content: center`                            |
@@ -97,7 +99,6 @@ MIT
 [Github]: <https://open-sauces.github.io/super-simple-flex-grid-react>
 
 
-[children]: <https://open-sauces.github.io/super-simple-flex-grid-react/example/dist/#children>
 [customClass]: <https://open-sauces.github.io/super-simple-flex-grid-react/example/dist/#customClass>
 [center]: <https://open-sauces.github.io/super-simple-flex-grid-react/example/dist/#center>
 [centerH]: <https://open-sauces.github.io/super-simple-flex-grid-react/example/dist/#centerH>
