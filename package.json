@@ -2,7 +2,7 @@
   "name": "super-simple-flex-grid-react",
   "version": "1.0.7",
   "description": "A react super simple flex grid",
-  "main": "src/FlexGrid",
+  "main": "dist",
   "scripts": {
     "build": "webpack",
     "dev": "webpack-dev-server --progress --watch",
@@ -51,6 +51,8 @@
     "istanbul": "^0.4.5",
     "jsdom": "^9.10.0",
     "markdown-loader": "0.1.7",
+    "file-loader": "^0.10.1",
+    "highlight.js": "^9.9.0",
     "mocha": "^3.2.0",
     "mocha-lcov-reporter": "^1.2.0",
     "mocha-webpack": "^1.0.0-beta.1",
@@ -65,8 +67,6 @@
     "webpack-node-externals": "^1.5.4"
   },
   "dependencies": {
-    "file-loader": "^0.10.1",
-    "highlight.js": "^9.9.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   }
