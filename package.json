@@ -61,13 +61,13 @@
     "react-addons-test-utils": "^15.4.2",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
-    "super-simple-flex-grid": "^1.0.7",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0",
     "webpack-node-externals": "^1.5.4"
   },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "super-simple-flex-grid": "^1.0.7",
   }
 }
