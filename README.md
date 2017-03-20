@@ -1,9 +1,11 @@
-[![Coverage Status](https://coveralls.io/repos/github/open-sauces/super-simple-flex-grid-react/badge.svg?branch=master)](https://coveralls.io/github/open-sauces/super-simple-flex-grid-react?branch=master) [![Build Status](https://travis-ci.org/open-sauces/super-simple-flex-grid-react.svg?branch=master)](https://travis-ci.org/open-sauces/super-simple-flex-grid-react)
-
-
 # super-simple-flex-grid-react
 
+[![Coverage Status](https://coveralls.io/repos/github/open-sauces/super-simple-flex-grid-react/badge.svg?branch=master)](https://coveralls.io/github/open-sauces/super-simple-flex-grid-react?branch=master) [![Build Status](https://travis-ci.org/open-sauces/super-simple-flex-grid-react.svg?branch=master)](https://travis-ci.org/open-sauces/super-simple-flex-grid-react)
+
 A react implementation of the [Super Simple Flex Grid]
+
+### This grid is deprecated. CSS Grids are here!
+----
 
 ### What the grid is
  - An HTML centric approach to Flexbox, with emphasis on customizability through props.
@@ -11,8 +13,6 @@ A react implementation of the [Super Simple Flex Grid]
 ### What the grid is not
  - Viewport-specific responsive: In the real world, design often requires pixel perfect implementation. Having responsive styles dictated in HTML through [viewport]-[grow1/grow2/hide/show] classes as well as custom css is a pain and hassle to maintain. With this grid system, all responsive behavior is handled with custom CSS.
 
-----
-### This grid is deprecated. CSS Grids are here!
 ----
 
 **[Demo]** | **[NPM]** | **[Github]**
