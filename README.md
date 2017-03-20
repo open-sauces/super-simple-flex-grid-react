@@ -12,6 +12,8 @@ A react implementation of the [Super Simple Flex Grid]
  - Viewport-specific responsive: In the real world, design often requires pixel perfect implementation. Having responsive styles dictated in HTML through [viewport]-[grow1/grow2/hide/show] classes as well as custom css is a pain and hassle to maintain. With this grid system, all responsive behavior is handled with custom CSS.
 
 ----
+### This grid is deprecated. CSS Grids are here!
+----
 
 **[Demo]** | **[NPM]** | **[Github]**
 
